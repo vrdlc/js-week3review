@@ -14,7 +14,7 @@ export default Ember.Route.extend({
       question.save();
       this.transitionTo('index');
     },
-    destroyQuestion(question) {
+    destroyQuestion() {
       this.transitionTo('index');
     }
   }
