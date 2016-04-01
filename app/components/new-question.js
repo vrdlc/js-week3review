@@ -6,7 +6,7 @@ export default Ember.Component.extend({
     showQuestionForm() {
       this.set('newQuestion', true);
     },
-    savePost() {
+    save() {
       var questionParams = {
         user: this.get('user'),
         date: this.get('date'),
@@ -14,7 +14,7 @@ export default Ember.Component.extend({
         body: this.get('body'),
       };
       this.set('newQuestion', false);
-      this.sendAction('savePost', questionParams);
+      this.sendAction('save', questionParams);
     }
   }
 });
