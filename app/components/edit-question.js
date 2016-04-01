@@ -1,10 +1,10 @@
 import Ember from 'ember';
 
 export default Ember.Component.extend({
-  editQuestionForm: false,
+  editForm: false,
   actions: {
     editQuestionForm() {
-      this.set('editQuestionForm', true);
+      this.set('editForm', true);
     },
     editQuestion(question) {
       var params = {

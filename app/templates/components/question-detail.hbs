@@ -1,4 +1,11 @@
-<p class="titletext">{{question.title}}</p> by <p class="usertext">{{question.user}}</p><hr>
-<p class="bodytext">{{question.body}}</p>
-<button class="btn btn-sm btn-warning" {{action 'editQuestion' question}}>Edit Question</button>
+<h1 class="titletext">{{question.title}}</h1>
+<h4 class="usertext">{{question.user}}</h4>
+<h5 class="datetext">{{question.date}}</h5>
+<h4 class="bodytext">{{question.body}}</h4>
+{{edit-question question=question editQuestion="editQuestion"}}
 <button {{action 'delete' question}}>Delete</button>
+
+<p>{{answer.user}}</p>
+
+
+{{new-answer submitAnswer="submitAnswer"}}

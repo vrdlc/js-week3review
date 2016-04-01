@@ -1,4 +1,4 @@
-{{#if editQuestionForm}}
+{{#if editForm}}
 <h1>Edit Your Question</h1>
 <div>
     <form>
@@ -25,5 +25,5 @@
   </form>
 </div>
   {{else}}
-    <button class='btn btn-sm btn-success' {{action 'editQuestionForm'}}>Edit Question</button>
+    <button class='btn btn-sm btn-info' {{action 'editQuestionForm'}}>Edit Question</button>
 {{/if}}
