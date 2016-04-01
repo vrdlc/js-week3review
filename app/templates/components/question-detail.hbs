@@ -1,4 +1,4 @@
 <p class="titletext">{{question.title}}</p> by <p class="usertext">{{question.user}}</p><hr>
 <p class="bodytext">{{question.body}}</p>
-
+<button class="btn btn-sm btn-warning" {{action 'editQuestion' question}}>Edit Question</button>
 <button {{action 'delete' question}}>Delete</button>

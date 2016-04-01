@@ -1,10 +1,15 @@
 import Ember from 'ember';
 
 export default Ember.Component.extend({
-  deleteQuestion(question) {
+  actions: {
+  editQuestion(question, params) {
+    this.sendAction('editQuestion', question, params);
+  },
+  delete(question) {
     if(confirm("You said you needed help!")) {
       question.destroyRecord();
-      this.transitionTo('index');
+      this.sendAction('destroyQuestion', question);
     }
   }
+}
 });
