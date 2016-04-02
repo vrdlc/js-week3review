@@ -1,0 +1,14 @@
+<h1>SITE TITLE</h1>
+
+{{new-question saveQuestion="saveQuestion"}}
+
+<ul>
+  {{#each model as |question|}}
+    {{question-tile question=model  destroyQuestion="destroyQuestion"}}
+    {{update-question question=model update="update"}}
+  {{/each}}
+</ul>
+
+
+
+{{#link-to 'about'}}<button class="btn btn-sm btn-warning">About</button>{{/link-to}}

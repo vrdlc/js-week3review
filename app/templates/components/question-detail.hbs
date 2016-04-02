@@ -1,0 +1,12 @@
+<h2>{{question.title}}</h2>
+<h4>{{question.user}}</h4>
+<h4>{{question.date}}</h4>
+<h3>{{question.body}}</h3>
+<p>{{question.answer}}</p>
+
+{{update-question question=model update="update"}}
+
+{{answer.user}}<br>
+{{answer.answer}}
+
+<button class="btn btn-sm btn-danger" {{action 'delete' question}}>Delete</button>
