@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <h1>SITE TITLE</h1>
 
 {{new-question saveQuestion="saveQuestion"}}
@@ -12,3 +13,18 @@
 
 
 {{#link-to 'about'}}<button class="btn btn-sm btn-warning">About</button>{{/link-to}}
+=======
+<h1>Questions For Quacks</h1>
+
+<h3>Ask away! We mostly know what we're talking about, because we're just like you: intelligent and prepared to deal with any medical emergencies that come your way!</h3>
+
+{{new-question save="save"}}
+
+<ul>
+  {{#each model as |question|}}
+    {{question-tile question=question editQuestion="editQuestion" destroyQuestion="destroyQuestion"}}
+  {{/each}}
+</ul>
+
+{{#link-to 'about'}}<button class='btn btn-sm btn-danger'>About</button>{{/link-to}}
+>>>>>>> 65c4d25fb762ed69df67113e589d449c271a42b2

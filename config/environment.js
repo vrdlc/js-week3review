@@ -2,7 +2,11 @@
 
 module.exports = function(environment) {
   var ENV = {
+<<<<<<< HEAD
     modulePrefix: 'wk3review',
+=======
+    modulePrefix: 'qanda2',
+>>>>>>> 65c4d25fb762ed69df67113e589d449c271a42b2
     environment: environment,
     contentSecurityPolicy: { 'connect-src': "'self' https://auth.firebase.com wss://*.firebaseio.com" },
     firebase: 'https://js-ember-week3-qanda.firebaseio.com/',

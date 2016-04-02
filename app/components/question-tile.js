@@ -1,6 +1,7 @@
 import Ember from 'ember';
 
 export default Ember.Component.extend({
+<<<<<<< HEAD
   answerIsShowing: false,
   actions: {
     answerShow: function() {
@@ -15,4 +16,7 @@ export default Ember.Component.extend({
       }
     }
   }
+=======
+
+>>>>>>> 65c4d25fb762ed69df67113e589d449c271a42b2
 });
