@@ -2,8 +2,8 @@ import Ember from 'ember';
 
 export default Ember.Component.extend({
   actions: {
-    submitAnswer(answer, params) {
-      this.transitionTo('/question/' + params.question_id);
+    submitAnswer(params) {
+      this.sendAction('submitAnswer', params);
     },
   editQuestion(question, params) {
     this.sendAction('editQuestion', question, params);
