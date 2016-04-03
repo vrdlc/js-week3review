@@ -1,4 +1,8 @@
+<<<<<<< HEAD
+# Wk3review
+=======
 # Qanda2
+>>>>>>> 65c4d25fb762ed69df67113e589d449c271a42b2
 
 This README outlines the details of collaborating on this Ember application.
 A short introduction of this app could easily go here.

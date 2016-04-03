@@ -2,9 +2,13 @@
 <h4 class="usertext">{{question.user}}</h4>
 <h5 class="datetext">{{question.date}}</h5>
 <h4 class="bodytext">{{question.body}}</h4>
-{{edit-question question=question editQuestion="editQuestion"}}
-<button {{action 'delete' question}}>Delete</button>
 
+{{update-question question=model update="update"}}
+
+{{answer.user}}<br>
+{{answer.answer}}
+
+<button class="btn btn-sm btn-danger" {{action 'delete' question}}>Delete</button>
 
   <h4>Answers: </h4>
     {{#each model.answers as |answer|}}

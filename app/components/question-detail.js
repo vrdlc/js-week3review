@@ -5,14 +5,20 @@ export default Ember.Component.extend({
     submitAnswer(params) {
       this.sendAction('submitAnswer', params);
     },
-  editQuestion(question, params) {
-    this.sendAction('editQuestion', question, params);
-  },
-  delete(question) {
-    if(confirm("You said you needed help!")) {
-      question.destroyRecord();
-      this.sendAction('destroyQuestion', question);
+
+    update(question, params) {
+      Object.keys(params).forEach(function(key) {
+        if(params[key] !==undefined && params[key] !=="") {
+          question.set(key,params[key]);
+        }
+      });
+      question.save();
+      this.transitionTo('index');
+    },
+    delete(question) {
+      if(confirm('You said you wanted help!')){
+        this.sendAction('destroyQuestion', question);
+      }
     }
   }
-}
 });

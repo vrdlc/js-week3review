@@ -1,7 +1,13 @@
 {
+<<<<<<< HEAD
+  "name": "wk3review",
+  "version": "0.0.0",
+  "description": "Small description for wk3review goes here",
+=======
   "name": "qanda2",
   "version": "0.0.0",
   "description": "Small description for qanda2 goes here",
+>>>>>>> 65c4d25fb762ed69df67113e589d449c271a42b2
   "private": true,
   "directories": {
     "doc": "doc",
@@ -21,7 +27,11 @@
   "devDependencies": {
     "broccoli-asset-rev": "^2.4.2",
     "ember-ajax": "0.7.1",
+<<<<<<< HEAD
+    "ember-bootstrap": "0.7.0",
+=======
     "ember-bootstrap": "0.6.4",
+>>>>>>> 65c4d25fb762ed69df67113e589d449c271a42b2
     "ember-cli": "2.4.3",
     "ember-cli-app-version": "^1.0.0",
     "ember-cli-babel": "^5.1.6",

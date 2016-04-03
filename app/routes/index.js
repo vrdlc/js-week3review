@@ -7,12 +7,24 @@ export default Ember.Route.extend({
     answers: this.store.findAll('answer')
 });
   },
-
   actions: {
     save(params) {
       var newQuestion = this.store.createRecord('question', params);
       newQuestion.save();
       this.transitionTo('index');
     },
-}
+    update(question, params) {
+      Object.keys(params).forEach(function(key) {
+        if(params[key]!==undefined && params[key] !=="") {
+          question.set(key,params[key]);
+        }
+      });
+      question.save();
+      this.transitionTo('index');
+    },
+    destroyQuestion(question) {
+      question.destroyRecord();
+      this.transitionTo('index');
+    }
+  }
 });
